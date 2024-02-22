@@ -6,10 +6,10 @@ import { TelaLogin } from './src/components';
 export default function App() {
   return (
     <View style={styles.container}>
-    {/*<View style={styles.middle}/>*/}
-      
+
+
       <TelaLogin />
-      <StatusBar style="auto" />
+      <StatusBar style={styles.container} />
     </View>
   );
 }
@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     backgroundColor: 'gainsboro',
-    
   },
+  logo: {
+    width: 300,
+    height: 80,
+    marginLeft: 50,
+  }
 });
